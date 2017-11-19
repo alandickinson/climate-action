@@ -211,6 +211,7 @@ const Lede = styled.div`
 `
 const StatePanel = styled.div`
   width: 25em;
+  max-width: 25em;
   padding: 0px;
   background-color: tomato;
   height: 100%;
@@ -259,11 +260,22 @@ const Footer = styled.div`
   margin: 0 auto;
   margin-top: 60px;
   text-align: center;
+  font-size: 1em;
   width: 100%;
   padding-top: 3em;
   padding-bottom: 3em;
   background-color: white;
   border-top: 2px solid tomato;
+  ${media.tablet`
+    margin: 60px 0 0 0;
+    text-align: left;
+    font-size: 0.7em;
+  `}
+ 	${media.phone`
+    margin: 60px auto 0px auto;
+    font-size: 0.7em;
+    text-align: center;
+  `}
 `
 const PanelHeader = styled.div`
   border-top-right-radius: 7px;
