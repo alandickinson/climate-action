@@ -168,6 +168,8 @@ const ContentContainer = styled.div`
   }
   color: dimgrey;
   margin: 0 auto;
+  max-width: 960px;
+  padding: 0 40px;
   ${media.huge`
     max-width: 960px;
     padding: 0 40px;
