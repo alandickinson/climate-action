@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import styled, { css } from 'styled-components';
 import ShareButtons from './social/ShareButtons';
-import States from './States'
 import Select from 'react-select';
 import 'react-select/dist/react-select.css';
-import BonnImage from '../assets/bonn.jpg';
 import ProtestImage from '../assets/climate-protest.jpg';
 import {MdOpenInNew, MdAdjust} from 'react-icons/lib/md';
 
@@ -36,8 +34,6 @@ class App extends Component {
   }
   render() {
     const options = STATES['US'];
-    const gradesheet = STATES['GradeSheet'];
-    const currentGrade = gradesheet.filter(grade => grade.state === this.state.selectedState)
     return (
       <div>
         <Cover>
